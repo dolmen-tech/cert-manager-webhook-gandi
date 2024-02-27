@@ -1,4 +1,4 @@
-module github.com/bwolf/cert-manager-webhook-gandi
+module github.com/dolmen-tech/cert-manager-webhook-gandi
 
 go 1.21
 

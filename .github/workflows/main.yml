@@ -92,7 +92,7 @@ jobs:
           target: image
           push: true
           build-args: GO_VERSION=${{ needs.base.outputs.go_version }}
-          tags: bwolf/cert-manager-webhook-gandi:latest,bwolf/cert-manager-webhook-gandi:${{ needs.base.outputs.build_version }}
+          tags: dolmentech/cert-manager-webhook-gandi:latest,dolmentech/cert-manager-webhook-gandi:${{ needs.base.outputs.build_version }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
 
