@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.3
-ARG GO_VERSION
+ARG GO_VERSION=1.22
 FROM --platform=${TARGETPLATFORM} golang:${GO_VERSION}-alpine AS base
 
 WORKDIR /go/src/cert-manager-webhook-gandi

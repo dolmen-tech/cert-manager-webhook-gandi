@@ -82,20 +82,20 @@ This webhook has been tested with [cert-manager] v1.14.3 and Kubernetes v1.26.12
             --set logLevel=2 \
             ./deploy/cert-manager-webhook-gandi
 
-   To deploy using the image from Docker Hub (for example using the `0.3.0` tag):
+   To deploy using the image from Docker Hub (for example using the `0.3.1` tag):
 
         helm install cert-manager-webhook-gandi \
             --namespace cert-manager \
             --set features.apiPriorityAndFairness=true \
-            --set image.tag=0.3.0 \
+            --set image.tag=0.3.1 \
             --set logLevel=2 \
             ./deploy/cert-manager-webhook-gandi
 
-   To deploy using the Helm repository (for example using the `v0.3.0` version):
+   To deploy using the Helm repository (for example using the `v0.3.1` version):
 
         helm install cert-manager-webhook-gandi \
             --repo https://dolmen-tech.github.io/cert-manager-webhook-gandi \
-            --version v0.3.0 \
+            --version v0.3.1 \
             --namespace cert-manager \
             --set features.apiPriorityAndFairness=true \
             --set logLevel=2
